@@ -1,0 +1,11 @@
+{
+  "name": "retrieve-booking",
+  "version": "1.0.0",
+  "description": "Carhire retrieve booking widget created with reactJS tobe used within multiple cms pages of vroomvroomvroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vincent Rafols <vincent.rafols@gmail.com>",
+  "license": "ISC"
+}
