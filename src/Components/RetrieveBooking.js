@@ -1,6 +1,7 @@
 import React from 'react';
-import RetrieveForm from './RetrieveForm'
-import ForgotReservationForm from './ForgotReservationForm'
+import RetrieveForm from './RetrieveForm';
+import ForgotReservationForm from './ForgotReservationForm';
+import InfoModal from './InfoModal';
 
 class RetrieveBooking extends React.Component {
     constructor() {
@@ -23,6 +24,7 @@ class RetrieveBooking extends React.Component {
             <div className="container-fluid">
                 <RetrieveForm forgotReservation={this.state.forgotReservation} handleForgotReservation={this.handleForgotReservation} />
                 <ForgotReservationForm forgotReservation={this.state.forgotReservation} handleForgotReservation={this.handleForgotReservation}/>
+                <InfoModal forgotReservation={this.state.forgotReservation} handleForgotReservation={this.handleForgotReservation}/>
             </div>
         );
     }

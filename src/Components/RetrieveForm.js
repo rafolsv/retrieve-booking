@@ -30,7 +30,12 @@ class RetrieveForm extends React.Component {
                     <a href="#" onClick={this.handleForgotClick}>Forgot Reservation Number?</a>
                 </div>
                 <div className="form-group col-xs-12 col-sm-6">
-                    <button type="submit" className="btn btn-lg btn-primary col-xs-12">Retrieve my Booking</button>
+                    <button type="submit"
+                        className="btn btn-lg btn-primary col-xs-12"
+                        data-toggle="modal"
+                        data-target="#myModal">
+                        Retrieve my Booking
+                    </button>
                 </div>
             </form>
         );

@@ -13,6 +13,7 @@ class ForgotReservationForm extends React.Component {
     handleCancelClick() {
         this.props.handleForgotReservation(false);
     }
+
     render() {
         return (
             <form className={this.props.forgotReservation ? 'row' : 'hidden'}>
@@ -25,7 +26,12 @@ class ForgotReservationForm extends React.Component {
                     <button type="submit" className="btn btn-lg btn-danger col-xs-12" onClick={this.handleCancelClick}>Cancel</button>
                 </div>
                 <div className="form-group col-xs-12 col-sm-6">
-                    <button type="submit" className="btn btn-lg btn-primary col-xs-12">Send Booking Details</button>
+                    <button type="submit"
+                        className="btn btn-lg btn-primary col-xs-12"
+                        data-toggle="modal"
+                        data-target="#myModal">
+                        Send Booking Details
+                    </button>
                 </div>
             </form>
         );
