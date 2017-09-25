@@ -18,6 +18,16 @@ module.exports = {
                     'babel-loader',
                 ],
             },
+            {
+                test: /\.(scss|css)$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader'
+                    },
+                    'sass-loader'
+                ]
+            },
         ],
     },
     resolve: {

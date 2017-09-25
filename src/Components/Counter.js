@@ -1,5 +1,4 @@
 import React from 'react';
-
 /**
  * A counter button: tap the button to increase the count.
  */
@@ -13,7 +12,7 @@ class Counter extends React.Component {
 
     render() {
         return (
-            <button
+            <button className="container"
                 onClick={() => {
                     this.setState({ count: this.state.count + 1 });
                 }}
