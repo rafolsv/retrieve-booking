@@ -4,7 +4,6 @@ module.exports = {
     context: path.join(__dirname, 'src'),
     entry: [
         './main.js',
-        './Components/bootstrap.js',
     ],
     output: {
         path: path.join(__dirname, 'build'),
@@ -28,10 +27,6 @@ module.exports = {
                     },
                     'sass-loader'
                 ]
-            },
-            {
-                test :/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/,
-                use: 'imports-loader?jQuery=jquery',
             }
         ],
     },

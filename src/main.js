@@ -6,6 +6,6 @@ import './Styles/style.scss';
 document.addEventListener('DOMContentLoaded', function() {
     ReactDOM.render(
         React.createElement(RetrieveBooking),
-        document.getElementById('mount')
+        document.getElementById('retrieveBooking')
     );
 });
